@@ -539,7 +539,6 @@ for (let i = 0; i < buttonlength; i++) {
 
 /* ========== video click start ========== */
 cvideo.addEventListener("click", () => {
-  let nftvideo = document.getElementById("nftvideo");
   nftvideo.click();
 });
 /* ========== video click end ========== */
