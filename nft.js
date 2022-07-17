@@ -18,10 +18,6 @@ var buttonsLinkLength = buttonsLink.length;
 for (let i = 0; i < buttonsLength; i++) {
   buttons[i].addEventListener("click", () => {
     buttonsLink[i].click();
-    console.log(buttonsLink[i]);
-    buttonsLink[i].addEventListener("click", () => {
-      console.log("clicked");
-    });
   });
 }
 /* ========== buttons click end ========== */
