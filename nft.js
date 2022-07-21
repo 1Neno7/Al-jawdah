@@ -9,9 +9,9 @@ function vanish() {
 /* ========== preloder end ========== */
 
 /* ========== buttons click start ========== */
-var buttons = document.querySelectorAll(".connect, .backb, #nftlogoimg");
+var buttons = document.querySelectorAll(".connect, .backb, .logoimg");
 var buttonsLink = document.querySelectorAll(
-  ".connect a, .backb a, #nftlogoimg a"
+  ".connect a, .backb a, .logoimg a"
 );
 var buttonsLength = buttons.length;
 var buttonsLinkLength = buttonsLink.length;
@@ -23,15 +23,15 @@ for (let i = 0; i < buttonsLength; i++) {
 /* ========== buttons click end ========== */
 
 /* ========== Al-jawdah button start ========== */
-var nftlogoimg = document.getElementById("nftlogoimg");
+var logoimg = document.querySelector(".logoimg");
 if (innerHeight / 2.777 >= innerWidth) {
-  nftlogoimg.style.position = "relative";
+  logoimg.style.position = "relative";
 }
 window.addEventListener("resize", () => {
   if (innerHeight / 2.777 >= innerWidth) {
-    nftlogoimg.style.position = "relative";
+    logoimg.style.position = "relative";
   } else {
-    nftlogoimg.style.position = "absolute";
+    logoimg.style.position = "absolute";
   }
 });
 /* ========== Al-jawdah button end ========== */
