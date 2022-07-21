@@ -1,0 +1,420 @@
+/* Text Font josefin-sans start */
+/* josefin-sans-regular - latin */
+@font-face {
+  font-family: "Josefin Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: local(""),
+    url("fonts/josefin-sans-v25-latin-regular.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("fonts/josefin-sans-v25-latin-regular.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  font-display: swap;
+}
+/* josefin-sans-500 - latin */
+@font-face {
+  font-family: "Josefin Sans";
+  font-style: normal;
+  font-weight: 500;
+  src: local(""), url("fonts/josefin-sans-v25-latin-500.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("fonts/josefin-sans-v25-latin-500.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  font-display: swap;
+}
+/* josefin-sans-600 - latin */
+@font-face {
+  font-family: "Josefin Sans";
+  font-style: normal;
+  font-weight: 600;
+  src: local(""), url("fonts/josefin-sans-v25-latin-600.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("fonts/josefin-sans-v25-latin-600.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  font-display: swap;
+}
+/* josefin-sans-700 - latin */
+@font-face {
+  font-family: "Josefin Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: local(""), url("fonts/josefin-sans-v25-latin-700.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("fonts/josefin-sans-v25-latin-700.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  font-display: swap;
+}
+/* Text Font josefin-sans end */
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Josefin Sans", sans-serif;
+  box-sizing: border-box;
+}
+.loading {
+  overflow: hidden;
+  height: 100vh;
+}
+html {
+  scroll-behavior: smooth;
+}
+.showcase {
+  position: relative;
+  right: 0;
+  width: 100%;
+  min-height: 100vh;
+  background: #111;
+  color: #fff;
+  z-index: 2;
+}
+
+/* ====== scrollbar style start ====== */
+::-webkit-scrollbar {
+  width: min(1vh, 0.5vw);
+}
+::-webkit-scrollbar-track {
+  background: #111;
+}
+::-webkit-scrollbar-thumb {
+  background: #90ee90;
+  border-radius: 500vmax;
+  border: #111 solid 0.1vmax;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #efff5f;
+}
+@supports (scrollbar-color: red blue) {
+  * {
+    scrollbar-color: #90ee90 #111;
+    scrollbar-width: thin;
+  }
+}
+/* ====== scrollbar style end ====== */
+
+/* ====== preloader start ====== */
+.preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background-image: radial-gradient(#86608e, #702963);
+  z-index: 11;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 1;
+  transition: all 0.5s;
+}
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #333;
+  mix-blend-mode: overlay;
+  animation: bg 60s linear infinite;
+}
+@keyframes bg {
+  0% {
+    background-color: #333;
+  }
+  50% {
+    background-color: #987;
+  }
+  100% {
+    background-color: #333;
+  }
+}
+.disappear {
+  animation: vanish 1s forwards;
+}
+@keyframes vanish {
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+/* ====== preloader end ====== */
+
+/* ====== navbar start ====== */
+.nftnavbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  max-width: 100%;
+  height: 10%;
+  z-index: 20;
+  display: flex;
+  align-items: top;
+  justify-content: end;
+  margin: 0;
+  padding: 0;
+}
+/* ====== navbar end ====== */
+
+/* ====== Al-jawdah logo end ====== */
+
+.logoimg {
+  user-select: none;
+  filter: drop-shadow(0 0 max(1vh, 0.5vw) black);
+  cursor: pointer;
+  position: absolute;
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.1),
+    rgba(255, 255, 255, 0)
+  );
+  backdrop-filter: blur(max(1vh, 0.5vw));
+  -webkit-backdrop-filter: blur(max(1vh, 0.5vw));
+  border-radius: 500vmax;
+  border: 0.1vmax solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0 max(0.8vh, 0.4vw) max(3.2vh, 1.6vw) rgba(0, 0, 0, 0.37);
+  padding: 0.5vmax 1vmax;
+  height: 4.25vmax;
+  width: fit-content;
+  transform: scale(0.9);
+  transition: all 0.5s;
+  top: 0;
+  left: 0;
+  margin: 1vmax 0 0 2vmax;
+  overflow: hidden;
+}
+.logoimg img {
+  max-height: 100%;
+}
+.logoimg:hover {
+  transform: scale(1);
+  border-color: #efff5f;
+  animation: animateColor 8s linear infinite;
+}
+@keyframes animateColor {
+  0% {
+    box-shadow: 0 0 max(4vh, 2vw) rgb(255, 36, 219);
+  }
+  20% {
+    box-shadow: 0 0 max(4vh, 2vw) rgb(51, 36, 255);
+  }
+  40% {
+    box-shadow: 0 0 max(4vh, 2vw) rgb(62, 255, 36);
+  }
+  60% {
+    box-shadow: 0 0 max(4vh, 2vw) rgb(255, 251, 36);
+  }
+  80% {
+    box-shadow: 0 0 max(4vh, 2vw) rgb(255, 36, 36);
+  }
+  100% {
+    box-shadow: 0 0 max(4vh, 2vw) rgb(255, 36, 219);
+  }
+}
+/* ====== al-jawdah home logo end ====== */
+
+/* ====== connect start ====== */
+.connect,
+.backb {
+  cursor: pointer;
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.1),
+    rgba(255, 255, 255, 0)
+  );
+  backdrop-filter: blur(max(1vh, 0.5vw));
+  -webkit-backdrop-filter: blur(max(1vh, 0.5vw));
+  border-radius: 500vmax;
+  border: 0.1vmax solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0 max(0.8vh, 0.4vw) max(3.2vh, 1.6vw) rgba(0, 0, 0, 0.37);
+  padding: 0.5vmax 1vmax;
+  height: 4.25vmax;
+  width: fit-content;
+  transform: scale(0.9);
+  transition: all 0.5s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+  right: 0;
+  margin: 1vmax 1vmax 0 0;
+}
+.connect:hover {
+  transform: scale(1);
+  border-color: #efff5f;
+  box-shadow: 0 0 max(4vh, 2vw) #90ee90;
+}
+.connect a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 2vmax;
+}
+/* ====== connect end ====== */
+
+/* ====== back button start ====== */
+.backb {
+  width: 4.25vmax;
+  height: 4.25vmax;
+  margin: 1vmax 2vmax 0 0;
+}
+.backimg {
+  width: 3.4vw;
+  height: 3.4vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+}
+.backb::before,
+.backb::after {
+  content: "";
+  position: absolute;
+  width: 65%;
+  height: 5%;
+  background: #fff;
+}
+.backb::before {
+  transform: rotate(45deg);
+}
+.backb::after {
+  transform: rotate(-45deg);
+}
+.backb:hover {
+  transform: scale(1);
+  border-color: #efff5f;
+  box-shadow: 0 0 max(4vh, 2vw) #ff7f7f;
+}
+/* ====== back button end ====== */
+
+/* ====== NFT background video start ====== */
+#video-container {
+  position: absolute;
+  background: #05040d;
+  display: flex;
+  align-items: top;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+.video-wrapper {
+  position: relative;
+  width: fit-content;
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+#nftbvideo {
+  height: 100vmin;
+}
+.color-left {
+  position: absolute;
+  height: 100%;
+  width: 50%;
+  left: -20%;
+  background: linear-gradient(
+    90deg,
+    rgba(5, 4, 13, 1) 50%,
+    rgba(255, 255, 255, 0)
+  );
+}
+.color-right {
+  position: absolute;
+  height: 100%;
+  width: 50%;
+  right: -20%;
+  background: linear-gradient(
+    270deg,
+    rgba(5, 4, 13, 1) 50%,
+    rgba(255, 255, 255, 0)
+  );
+}
+.color-bottom {
+  position: absolute;
+  height: 10%;
+  width: 100%;
+  bottom: 0;
+  background: linear-gradient(0deg, rgba(5, 4, 13, 1), rgba(255, 255, 255, 0));
+}
+.color-bottom2 {
+  position: absolute;
+  height: 20%;
+  width: 100%;
+  bottom: -5%;
+  background: linear-gradient(0deg, rgba(5, 4, 13, 1), rgba(255, 255, 255, 0));
+}
+/* ====== NFT background video end ====== */
+
+/* ====== Batch1 text start ====== */
+.batch1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  filter: drop-shadow(0 0 0.5vmax rgba(0, 0, 0, 1));
+}
+.left-text {
+  position: absolute;
+  left: 3vmax;
+  top: 14vmax;
+  width: 30%;
+  height: fit-content;
+  border: 2px solid #efff5f;
+  border-radius: 500vmax;
+  padding: 2vmax 1vmax 0.7vmax 1vmax;
+}
+.left-text:hover {
+  filter: drop-shadow(0 0 0.5vmax #ff7f7f);
+}
+.right-text {
+  position: absolute;
+  right: 3vmax;
+  top: 14vmax;
+  width: 30%;
+  border: 2px solid #efff5f;
+  border-radius: 500vmax;
+  padding: 2vmax 1vmax 0.7vmax 1vmax;
+}
+.right-text:hover {
+  filter: drop-shadow(0 0 0.5vmax #ff7f7f);
+}
+.tlink {
+  text-decoration: none;
+  color: skyblue;
+  white-space: nowrap;
+}
+.twitter {
+  color: skyblue;
+}
+.left-Character-Name {
+  margin: 0 0 3vmin 0;
+}
+.left-Character-Quote {
+  margin: 3vmin 0;
+}
+.left-Card-Logos {
+  margin: 3vmin 0;
+}
+.left-Special-Extras {
+  margin: 3vmin 0 0 0;
+}
+.right-Character-Image {
+  margin: 0 0 3vmin 0;
+}
+.right-Image-Background {
+  margin: 3vmin 0;
+}
+.right-Card-Color {
+  margin: 3vmin 0;
+}
+.right-Card-Stars {
+  margin: 3vmin 0 0 0;
+}
+.batch1 h1 {
+  text-align: center;
+  font-size: 6vmin;
+  margin: 1vmin 0;
+}
+.batch1 h3 {
+  text-align: center;
+  font-size: 3.5vmin;
+}
+/* ====== Batch1 text end ====== */
