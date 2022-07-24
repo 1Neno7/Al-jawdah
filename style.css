@@ -717,7 +717,8 @@ html {
   transition: all 0.5s;
 }
 #logos {
-  width: 15%;
+  width: 15vmax;
+  max-width: 60vmin;
   height: auto;
 }
 .logocolors {
