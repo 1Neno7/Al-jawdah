@@ -53,7 +53,7 @@ window.addEventListener("resize", () => {
 
 /* ========== video autoplay on lowBowerMode start ========== */
 body.addEventListener("touchstart", () => {
-  const videoElement = document.querySelector(".nftbvideo");
+  const videoElement = document.getElementById("nftbvideo");
   if (videoElement.playing) {
     // video is already playing so do nothing
   } else {
