@@ -546,7 +546,7 @@ cvideo.addEventListener("click", () => {
 /* ========== video autoplay on lowBowerMode start ========== */
 body.addEventListener("touchstart", () => {
   const videoElement = document.querySelectorAll(
-    ".cvideo, .bvideo"
+    "#developmentvideo, #cvideo, .bvideo"
   );
   for (let i = 0; i < videoElement.length; i++) {
     if (videoElement[i].playing) {
