@@ -542,3 +542,20 @@ cvideo.addEventListener("click", () => {
   nftvideo.click();
 });
 /* ========== video click end ========== */
+
+/* ========== video autoplay on lowBowerMode start ========== */
+body.addEventListener("click, touchstart", () => {
+  const videoElement = document.querySelectorAll(
+    "#developmentvideo, .cvideo, .bvideo"
+  );
+  for (let i = 0; i < videoElement.length; i++) {
+    if (videoElement[i].playing) {
+      // video is already playing so do nothing
+    } else {
+      // video is not playing
+      // so play video now
+      videoElement[i].play();
+    }
+  }
+});
+/* ========== video autoplay on lowBowerMode end ========== */
