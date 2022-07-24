@@ -101,7 +101,6 @@ var navli = document.querySelectorAll(".pagesl a");
 var Mnavli = document.querySelectorAll(".MM a");
 var muchmoreh2 = document.querySelector(".muchmoreh2");
 var content = document.querySelector(".content");
-var prlogos = document.getElementById("logos");
 var cvideo = document.querySelector(".cvideo");
 /* ========== variables end ========== */
 
@@ -238,7 +237,6 @@ if (h > w) {
     cglass[i].classList.add("v");
   }
   logos.classList.add("verticallogos");
-  prlogos.style.width = "100%";
   for (let i = 0; i < cdivlength; i++) {
     cdiv[i].classList.add("verticalcdiv");
   }
@@ -261,7 +259,6 @@ var vertical = function () {
       cglass[i].classList.add("v");
     }
     logos.classList.add("verticallogos");
-    prlogos.style.width = "100%";
     for (let i = 0; i < cdivlength; i++) {
       cdiv[i].classList.add("verticalcdiv");
     }
@@ -281,7 +278,6 @@ var vertical = function () {
       cglass[i].classList.remove("v");
     }
     logos.classList.remove("verticallogos");
-    prlogos.style.width = "15%";
     for (let i = 0; i < cdivlength; i++) {
       cdiv[i].classList.remove("verticalcdiv");
     }
