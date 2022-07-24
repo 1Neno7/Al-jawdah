@@ -20,20 +20,6 @@ for (let i = 0; i < buttonsLength; i++) {
 }
 /* ========== buttons click end ========== */
 
-/* ========== Al-jawdah button start ========== */
-var logoimg = document.querySelector(".logoimg");
-if (innerHeight / 2.777 >= innerWidth) {
-  logoimg.style.position = "relative";
-}
-window.addEventListener("resize", () => {
-  if (innerHeight / 2.777 >= innerWidth) {
-    logoimg.style.position = "relative";
-  } else {
-    logoimg.style.position = "absolute";
-  }
-});
-/* ========== Al-jawdah button end ========== */
-
 /* ========== video size start ========== */
 var video = document.getElementById("nftbvideo");
 if (innerHeight / 1.282 + innerHeight >= innerWidth) {
