@@ -467,6 +467,7 @@ html {
   max-height: 50%;
 }
 .logoii {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
