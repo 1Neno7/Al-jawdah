@@ -672,6 +672,7 @@ html {
 }
 /* ====== socialmedia background end ====== */
 .social a {
+  position: relative;
   display: inline-block;
   transition: 0.5s;
 }
