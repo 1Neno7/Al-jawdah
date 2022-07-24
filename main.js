@@ -544,7 +544,7 @@ cvideo.addEventListener("click", () => {
 /* ========== video click end ========== */
 
 /* ========== video autoplay on lowBowerMode start ========== */
-body.addEventListener("click, touchstart", () => {
+body.addEventListener("touchstart", () => {
   const videoElement = document.querySelectorAll(
     "#developmentvideo, .cvideo, .bvideo"
   );
