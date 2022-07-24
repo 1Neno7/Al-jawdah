@@ -10,9 +10,7 @@ function vanish() {
 
 /* ========== buttons click start ========== */
 var buttons = document.querySelectorAll(".connect, .backb, .logoimg");
-var buttonsLink = document.querySelectorAll(
-  ".connect a, .backb a, .logoimg a"
-);
+var buttonsLink = document.querySelectorAll(".connect a, .backb a, .logoimg a");
 var buttonsLength = buttons.length;
 var buttonsLinkLength = buttonsLink.length;
 for (let i = 0; i < buttonsLength; i++) {
@@ -52,3 +50,16 @@ window.addEventListener("resize", () => {
   }
 });
 /* ========== video size end ========== */
+
+/* ========== video autoplay on lowBowerMode start ========== */
+body.addEventListener("touchstart", () => {
+  const videoElement = document.querySelector(".nftbvideo");
+  if (videoElement.playing) {
+    // video is already playing so do nothing
+  } else {
+    // video is not playing
+    // so play video now
+    videoElement.play();
+  }
+});
+/* ========== video autoplay on lowBowerMode end ========== */
