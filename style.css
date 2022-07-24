@@ -653,24 +653,34 @@ html {
   justify-content: center;
   align-items: center;
   width: 100%;
+  max-width: 100%;
 }
 /* ====== socialmedia background start ====== */
 .socialglass {
-  padding: min(1.1vh, 0.8vw) min(2.2vh, 1.1vw) min(0.5vh, 0.25vw)
-    min(2.2vh, 1.1vw);
+  position: relative;
+  padding: 1.1vmin 2.2vmin 0.5vmin 2.2vmin;
   background: linear-gradient(
     135deg,
     rgba(255, 255, 255, 0.1),
     rgba(255, 255, 255, 0)
   );
-  backdrop-filter: blur(max(1vh, 0.5vw));
-  -webkit-backdrop-filter: blur(max(1vh, 0.5vw));
+  backdrop-filter: blur(1vmax);
+  -webkit-backdrop-filter: blur(1vmax);
   border-radius: 500vmax;
   border: 0.1vmax solid rgba(255, 255, 255, 0.18);
-  box-shadow: 0 max(0.8vh, 0.4vw) max(3.2vh, 1.6vw) rgba(0, 0, 0, 0.37);
+  box-shadow: 0 0.8vmax 3.2vmax rgba(0, 0, 0, 0.37);
 }
 /* ====== socialmedia background end ====== */
-
+.social a {
+  display: inline-block;
+  transition: 0.5s;
+}
+.social a:hover {
+  transform: scale(1.5);
+  transform-origin: bottom;
+  filter: drop-shadow(0px 0px 10px black);
+  z-index: 13;
+}
 /* ====== socialmedia icons start ====== */
 .f,
 .i,
@@ -689,16 +699,6 @@ html {
   max-width: 4vmin;
 }
 /* ====== socialmedia icons end ====== */
-.social a {
-  display: inline-block;
-  transition: 0.5s;
-}
-.social a:hover {
-  transform: scale(1.5);
-  transform-origin: bottom;
-  filter: drop-shadow(0px 0px 10px black);
-  z-index: 13;
-}
 /* ====== socialmedia bar end ====== */
 
 /* ====== preloader start ====== */
