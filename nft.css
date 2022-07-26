@@ -294,7 +294,7 @@ html {
 /* ====== NFT background video start ====== */
 #video-container {
   position: absolute;
-  background: red;
+  background: #05040d;
   display: flex;
   align-items: top;
   justify-content: center;
