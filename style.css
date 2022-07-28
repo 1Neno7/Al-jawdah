@@ -696,6 +696,7 @@ html {
 .s,
 .fa,
 .pa {
+  width: 4vmin;
   max-width: 4vmin;
 }
 /* ====== socialmedia icons end ====== */
