@@ -590,6 +590,7 @@ html {
 }
 #muchmorevideo {
   width: 85%;
+  height: auto;
   filter: drop-shadow(0 0 max(1vh, 0.5vw) #000);
   border: none;
 }
