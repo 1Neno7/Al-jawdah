@@ -156,6 +156,7 @@ html {
 /* ====== Al-jawdah logo end ====== */
 
 .logoimg {
+  -webkit-user-select: none;
   user-select: none;
   cursor: pointer;
   position: relative;
@@ -171,6 +172,7 @@ html {
   box-shadow: 0 0.8vmax 3.2vmax rgba(0, 0, 0, 0.37);
   padding: 0.5vmax 1vmax;
   height: 4.25vmax;
+  width: -moz-fit-content;
   width: fit-content;
   transform: scale(0.9);
   transition: all 0.5s;
@@ -181,10 +183,12 @@ html {
 }
 .logoimg a {
   position: relative;
+  max-width: -moz-fit-content;
   max-width: fit-content;
 }
 .logoimg img {
   width: auto;
+  max-width: -moz-fit-content;
   max-width: fit-content;
   max-height: 100%;
 }
@@ -234,6 +238,7 @@ html {
   box-shadow: 0 max(0.8vh, 0.4vw) max(3.2vh, 1.6vw) rgba(0, 0, 0, 0.37);
   padding: 0.5vmax 1vmax;
   height: 4.25vmax;
+  width: -moz-fit-content;
   width: fit-content;
   transform: scale(0.9);
   transition: all 0.5s;
@@ -316,9 +321,12 @@ html {
 }
 .video-wrapper {
   position: relative;
+  width: -moz-fit-content;
   width: fit-content;
   height: fit-content;
+  max-width: -moz-fit-content;
   max-width: fit-content;
+  max-height: -moz-fit-content;
   max-height: fit-content;
   display: flex;
   align-items: center;
