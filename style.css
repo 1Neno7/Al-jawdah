@@ -123,6 +123,7 @@ html {
   cursor: pointer;
   position: relative;
   filter: drop-shadow(0 0 max(1vh, 0.5vw) black);
+  -webkit-user-select: none;
   user-select: none;
   margin: 2vw;
 }
@@ -394,6 +395,7 @@ html {
   letter-spacing: min(0.2vh, 0.18vw);
   transition: 0.2s;
   border-radius: 500vmax;
+  width: -moz-fit-content;
   width: fit-content;
   border: none;
   outline: none;
@@ -453,6 +455,7 @@ html {
   flex-direction: column;
   z-index: 10;
   filter: drop-shadow(0 0 max(1vh, 0.5vw) black);
+  -webkit-user-select: none;
   user-select: none;
   margin: 3% 4% 3% 2%;
   width: min(50vh, 30%);
@@ -521,6 +524,7 @@ html {
   width: min(50vh, 30%);
   max-width: min(50vh, 30%);
   height: auto;
+  -webkit-user-select: none;
   user-select: none;
 }
 .cdiv.verticalcdiv {
@@ -532,6 +536,7 @@ html {
 }
 .cvideo {
   border-radius: max(4vh, 2vw);
+  -webkit-user-select: none;
   user-select: none;
   width: 100%;
   transition: all 0.5s;
