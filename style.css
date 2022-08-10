@@ -705,7 +705,9 @@ html {
 .fa,
 .pa {
   width: 4vmin;
+  height: auto;
   max-width: 4vmin;
+  max-height: 4vmin;
 }
 /* ====== socialmedia icons end ====== */
 /* ====== socialmedia bar end ====== */
