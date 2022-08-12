@@ -542,7 +542,7 @@ cvideo.addEventListener("click", () => {
 /* ========== video autoplay on lowBowerMode start ========== */
 body.addEventListener("touchstart", () => {
   const videoElement = document.querySelectorAll(
-    "#developmentvideo, #nft-video, .bvideo"
+    "#developmentvideo, #nft-video, .bvideo, #graphicvideo"
   );
   for (let i = 0; i < videoElement.length; i++) {
     if (videoElement[i].playing) {
