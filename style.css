@@ -524,6 +524,7 @@ html {
   width: min(50vh, 30%);
   max-width: min(50vh, 30%);
   height: auto;
+  max-height: 100%;
   -webkit-user-select: none;
   user-select: none;
 }
@@ -534,11 +535,15 @@ html {
   max-width: min(30vh, 95%);
   max-height: 50%;
 }
+#graphicdiv {
+  background-color: #03db99;
+}
 .cvideo {
   border-radius: max(4vh, 2vw);
   -webkit-user-select: none;
   user-select: none;
   width: 100%;
+  height: auto;
   transition: all 0.5s;
   border: 0.1vmax solid rgba(255, 255, 255, 0.18);
 }
@@ -550,7 +555,7 @@ html {
 #graphicdiv :hover {
   cursor: pointer;
   transform: scale(1.01);
-  box-shadow: 0 0 max(4vh, 2vw) #e19a2e;
+  box-shadow: 0 0 max(4vh, 2vw) #90ee90;
 }
 #developmentdiv :hover {
   cursor: pointer;
