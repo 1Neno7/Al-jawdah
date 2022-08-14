@@ -102,6 +102,9 @@ var Mnavli = document.querySelectorAll(".MM a");
 var muchmoreh2 = document.querySelector(".muchmoreh2");
 var content = document.querySelector(".content");
 var cvideo = document.querySelector(".cvideo");
+var videoElement = document.querySelectorAll(
+  "#developmentvideo, #nft-video, .bvideo, #graphicvideo"
+);
 /* ========== variables end ========== */
 
 /* ========== navbar hightlight start ========== */
@@ -539,11 +542,35 @@ cvideo.addEventListener("click", () => {
 });
 /* ========== video click end ========== */
 
+/* ========== video autoplay start ========== */
+window.addEventListener("DOMContentLoaded", () => {
+  for (let i = 0; i < videoElement.length; i++) {
+    videoElement[i].load();
+  }
+  setTimeout(() => {
+    document.querySelector(".bvideo").play();
+  }, 9000);
+  checkVideo();
+});
+window.addEventListener("scroll", checkVideo);
+function checkVideo() {
+  if (window.scrollY >= document.getElementById("nft").offsetTop / 1.8) {
+    document.querySelector("#nft-video").play();
+    if (window.scrollY >= document.getElementById("graphic").offsetTop / 1.25) {
+      document.querySelector("#graphicvideo").play();
+      if (
+        window.scrollY >=
+        document.getElementById("development").offsetTop / 1.28
+      ) {
+        document.querySelector("#developmentvideo").play();
+      }
+    }
+  }
+}
+/* ========== video autoplay end ========== */
+
 /* ========== video autoplay on lowBowerMode start ========== */
 body.addEventListener("touchstart", () => {
-  const videoElement = document.querySelectorAll(
-    "#developmentvideo, #nft-video, .bvideo, #graphicvideo"
-  );
   for (let i = 0; i < videoElement.length; i++) {
     if (videoElement[i].playing) {
       // video is already playing so do nothing
