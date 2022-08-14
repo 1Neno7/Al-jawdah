@@ -37,6 +37,16 @@ window.addEventListener("resize", () => {
 });
 /* ========== video size end ========== */
 
+/* ========== video autoplay start ========== */
+window.addEventListener("DOMContentLoaded", () => {
+  const videoElement = document.getElementById("nftbvideo");
+  videoElement.load();
+  setTimeout(() => {
+    videoElement.play();
+  }, 4000);
+});
+/* ========== video autoplay end ========== */
+
 /* ========== video autoplay on lowBowerMode start ========== */
 body.addEventListener("touchstart", () => {
   const videoElement = document.getElementById("nftbvideo");
