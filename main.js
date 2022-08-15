@@ -549,7 +549,7 @@ window.addEventListener("DOMContentLoaded", () => {
   }
   setTimeout(() => {
     document.querySelector(".bvideo").play();
-  }, 9000);
+  }, 3000);
   checkVideo();
 });
 window.addEventListener("scroll", checkVideo);
