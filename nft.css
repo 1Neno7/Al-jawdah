@@ -188,8 +188,7 @@ html {
 }
 .logoimg img {
   width: auto;
-  max-width: -moz-fit-content;
-  max-width: fit-content;
+  max-width: 100%;
   max-height: 100%;
 }
 .logoimg:hover {
