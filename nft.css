@@ -165,8 +165,8 @@ html {
     rgba(255, 255, 255, 0.1),
     rgba(255, 255, 255, 0)
   );
-  backdrop-filter: blur(1vmax);
   -webkit-backdrop-filter: blur(1vmax);
+  backdrop-filter: blur(1vmax);
   border-radius: 500vmax;
   border: 0.1vmax solid rgba(255, 255, 255, 0.18);
   box-shadow: 0 0.8vmax 3.2vmax rgba(0, 0, 0, 0.37);
@@ -231,8 +231,8 @@ html {
     rgba(255, 255, 255, 0.1),
     rgba(255, 255, 255, 0)
   );
-  backdrop-filter: blur(1vmax);
   -webkit-backdrop-filter: blur(1vmax);
+  backdrop-filter: blur(1vmax);
   border-radius: 500vmax;
   border: 0.1vmax solid rgba(255, 255, 255, 0.18);
   box-shadow: 0 max(0.8vh, 0.4vw) max(3.2vh, 1.6vw) rgba(0, 0, 0, 0.37);
