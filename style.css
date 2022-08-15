@@ -105,8 +105,8 @@ html {
     rgba(255, 255, 255, 0.1),
     rgba(255, 255, 255, 0)
   );
-  backdrop-filter: blur(max(1vh, 0.5vw));
   -webkit-backdrop-filter: blur(max(1vh, 0.5vw));
+  backdrop-filter: blur(max(1vh, 0.5vw));
   border-radius: 0 0 max(4vh, 2vw) max(4vh, 2vw);
   border-bottom: max(0.2vh, 0.1vw) solid rgba(255, 255, 255, 0.18);
   box-shadow: 0 max(0.8vh, 0.4vw) max(3.2vh, 1.6vw) rgba(0, 0, 0, 0.37);
@@ -230,8 +230,8 @@ html {
   align-items: center;
   justify-content: center;
   background: linear-gradient(135deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
-  backdrop-filter: blur(max(3vh, 1.5vw));
   -webkit-backdrop-filter: blur(max(3vh, 1.5vw));
+  backdrop-filter: blur(max(3vh, 1.5vw));
   box-shadow: 0 max(0.8vh, 0.4vw) max(3.2vh, 1.6vw) rgba(0, 0, 0, 0.37);
   transition: 0.5s;
 }
@@ -322,8 +322,8 @@ html {
     rgba(255, 255, 255, 0.1),
     rgba(255, 255, 255, 0)
   );
-  backdrop-filter: blur(max(1vh, 0.5vw));
   -webkit-backdrop-filter: blur(max(1vh, 0.5vw));
+  backdrop-filter: blur(max(1vh, 0.5vw));
   border-radius: max(4vh, 2vw);
   border: 0.1vmax solid rgba(255, 255, 255, 0.18);
   box-shadow: 0 max(0.8vh, 0.4vw) max(3.2vh, 1.6vw) rgba(0, 0, 0, 0.37);
@@ -683,8 +683,8 @@ html {
     rgba(255, 255, 255, 0.1),
     rgba(255, 255, 255, 0)
   );
-  backdrop-filter: blur(1vmax);
   -webkit-backdrop-filter: blur(1vmax);
+  backdrop-filter: blur(1vmax);
   border-radius: 500vmax;
   border: 0.1vmax solid rgba(255, 255, 255, 0.18);
   box-shadow: 0 0.8vmax 3.2vmax rgba(0, 0, 0, 0.37);
