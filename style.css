@@ -87,6 +87,13 @@ html {
 }
 /* ====== scrollbar style end ====== */
 
+/* ====== h1 start ====== */
+h1 {
+  position: absolute;
+  z-index: 0;
+}
+/* ====== h1 end ====== */
+
 /* ====== the header section start ====== */
 /* ====== Navigation bar background start ====== */
 #navbar {
@@ -168,7 +175,6 @@ html {
 /* ====== menu button start ====== */
 .toggle {
   position: relative;
-  display: flex;
   justify-content: center;
   align-items: center;
   width: 5vh;
@@ -409,7 +415,9 @@ html {
 .learnmore:hover {
   letter-spacing: min(0.6vh, 0.54vw);
 }
-#nowrap {
+#nowrap1,
+#nowrap2,
+#nowrap3 {
   white-space: nowrap;
 }
 .myname {
@@ -442,7 +450,8 @@ html {
 }
 #aboutush3,
 #muchmoreh3,
-#aboutush2 {
+#aboutush2,
+#muchmoreh2 {
   text-transform: none;
 }
 /* ====== text end ====== */

@@ -1,0 +1,7 @@
+User-agent: *
+Disallow:
+
+User-agent: *
+Allow: /
+
+Sitemap: http://www.al-jawdah.me/sitemap.xml

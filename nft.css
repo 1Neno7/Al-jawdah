@@ -87,6 +87,13 @@ html {
 }
 /* ====== scrollbar style end ====== */
 
+/* ====== h1 start ====== */
+h1 {
+  position: absolute;
+  z-index: 0;
+}
+/* ====== h1 end ====== */
+
 /* ====== preloader start ====== */
 .preloader {
   position: fixed;
